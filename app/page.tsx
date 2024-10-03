@@ -1,6 +1,7 @@
 import { Book, Brain, Code, Zap } from 'lucide-react';
 import React from 'react';
 import { Button, Footer, Header, SectionTitle } from './components';
+import EmailCapture from './components/EmailCapture';
 
 const Card: React.FC<{
   icon: React.ElementType;
@@ -28,9 +29,11 @@ const EscolaiLandingPage: React.FC = () => {
 
       <main className="container mx-auto px-4 py-12">
         <section className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-gray-100 font-heading">O que uma IA pode fazer por você?</h2>
+          <h2 className="text-4xl font-bold mb-4 text-gray-100 font-heading">O que uma IA pode fazer por mim?</h2>
           <p className="text-xl mb-8 text-gray-300">Um Guia Prático da Escolai</p>
-          <Button href="#" className="bg-primary-500 hover:bg-primary-600 text-white">Comece Grátis</Button>
+          <div className="flex items-center justify-center">
+            <EmailCapture />
+          </div>
         </section>
 
         <section className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 mx-6">
