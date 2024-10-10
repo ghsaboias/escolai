@@ -1,6 +1,6 @@
 import { Book, Brain, Building, Code, Gamepad2, Lightbulb, LucideIcon, Search, Star, UserCheck, Zap } from 'lucide-react';
 import React from 'react';
-import { Button, Card, SectionTitle } from '../components/index';
+import { Card, SectionTitle } from '../components/index';
 
 interface CourseItem {
   icon: LucideIcon;
@@ -47,9 +47,8 @@ const Courses: React.FC = () => {
       </div>
 
       <div className="text-center">
-        <SectionTitle>Pronto para iniciar sua aventura no mundo da IA?</SectionTitle>
-        <p className="text-xl mb-8 text-secondary-600">Embarque nesta jornada emocionante e descubra como a IA pode transformar sua vida!</p>
-        <Button href="#">Comece sua jornada agora</Button>
+        <SectionTitle>Pronto para começar?</SectionTitle>
+        <p className="text-xl mb-8 text-secondary-600">Descubra como a IA pode melhorar sua vida!</p>
       </div>
     </div>
   );
