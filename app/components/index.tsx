@@ -1,6 +1,7 @@
-export { Button } from './Button';
-export { Card } from './Card';
-export { Footer } from './Footer';
-export { Header } from './Header';
-export { SectionTitle } from './SectionTitle';
+export * from './AnimatedContent';
+export * from './Card';
+export * from './Footer';
+export * from './Header';
+export * from './SectionTitle';
+export * from './StartCourseButton';
 

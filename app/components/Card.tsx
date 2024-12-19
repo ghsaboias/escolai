@@ -8,11 +8,13 @@ interface CardProps {
     children?: React.ReactNode;
   }
   
-export const Card: React.FC<CardProps> = ({ icon: Icon, title, description, children }) => (
-    <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
-      <Icon className="text-primary-600 mb-4" size={32} />
-      <h3 className="text-xl font-semibold mb-2 text-secondary-800">{title}</h3>
-      <p className="text-secondary-600">{description}</p>
+export const Card: React.FC<CardProps> = ({ icon: Icon, title, description, children }) => {
+  return (
+    <div className="bg-gray-800 rounded-lg shadow-md p-6 border border-gray-700 hover:border-primary-500 transition-all duration-300 ease-in-out group">
+      <Icon className="w-12 h-12 text-primary-400 mb-4 group-hover:text-primary-300 transition-colors" />
+      <h3 className="text-xl font-semibold mb-2 text-gray-100 group-hover:text-primary-400 transition-colors">{title}</h3>
+      <p className="text-gray-300">{description}</p>
       {children}
     </div>
   );
+};
