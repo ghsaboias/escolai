@@ -1,4 +1,4 @@
-import { Download, Share2 } from 'lucide-react';
+import { ArrowLeft, Download, Share2 } from 'lucide-react';
 import React from 'react';
 import { SectionTitle } from '../../../components';
 
@@ -39,6 +39,17 @@ const Certificate: React.FC = () => {
           <Share2 className="w-5 h-5" />
           Compartilhar
         </button>
+      </div>
+
+      {/* Return to Main Page */}
+      <div className="flex items-center justify-between mb-8">
+        <a 
+          href="/" 
+          className="flex items-center gap-2 text-gray-400 hover:text-gray-300 transition-colors"
+        >
+          <ArrowLeft className="w-5 h-5" />
+          Voltar à página inicial
+        </a>
       </div>
     </div>
   );

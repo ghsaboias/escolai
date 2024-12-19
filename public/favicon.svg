@@ -1,0 +1,19 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Neural Network Background -->
+  <path d="M256 40C148 40 60 128 60 236C60 344 148 432 256 432C364 432 452 344 452 236C452 128 364 40 256 40Z" 
+    fill="#1E1E1E" stroke="#00FF94" stroke-width="8"/>
+  
+  <!-- Circuit Patterns -->
+  <path d="M150 236H362M256 130V342" stroke="#00FF94" stroke-width="4" stroke-linecap="round"/>
+  <path d="M180 166L332 306M332 166L180 306" stroke="#00FF94" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Connection Nodes -->
+  <circle cx="256" cy="236" r="30" fill="#00FF94"/>
+  <circle cx="256" cy="236" r="20" fill="#1E1E1E"/>
+  
+  <!-- Data Points -->
+  <circle cx="180" cy="166" r="12" fill="#00FF94"/>
+  <circle cx="332" cy="166" r="12" fill="#00FF94"/>
+  <circle cx="180" cy="306" r="12" fill="#00FF94"/>
+  <circle cx="332" cy="306" r="12" fill="#00FF94"/>
+</svg> 
