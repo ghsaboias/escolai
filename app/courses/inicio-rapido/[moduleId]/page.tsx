@@ -211,13 +211,57 @@ Tente você mesmo e observe como o LLM:
       {
         question: 'Qual das seguintes é a pergunta mais efetiva para um LLM?',
         options: [
-          'Me ajuda com programação',
-          'Como faço para aprender Python? Sou iniciante e quero focar em análise de dados',
-          'Explica tudo sobre programação',
-          'Quero código'
+          'Preciso de uma receita de bolo de chocolate que seja fácil de fazer e que fique bem molhadinho. Você tem alguma sugestão?',
+          'Preciso de uma receita de bolo de chocolate para 10 pessoas. Tenho forno elétrico e ingredientes básicos. Pode me ajudar?',
+          'Quero fazer um bolo de chocolate para um aniversário importante amanhã. Preciso que seja um bolo bonito e gostoso.',
+          'Pode me passar uma receita de bolo de chocolate caseiro? Gostaria de uma que seja testada e aprovada por outros cozinheiros.'
         ],
         correctAnswer: 1,
-        explanation: 'A segunda opção é mais efetiva pois especifica o contexto (iniciante), a linguagem (Python) e o objetivo (análise de dados).'
+        explanation: 'A segunda opção é mais efetiva pois especifica o contexto (10 pessoas), equipamento disponível (forno elétrico) e outras informações relevantes (ingredientes básicos).'
+      },
+      {
+        question: 'Ao pedir ajuda para organizar uma viagem, qual abordagem é mais eficaz?',
+        options: [
+          'Quero planejar uma viagem para o Rio de Janeiro nas férias de julho. Busco lugares turísticos famosos e bons restaurantes na cidade.',
+          'Estou planejando uma viagem de 5 dias para o Rio de Janeiro em julho, com um orçamento de R$3.000. Gosto de praias e cultura local. Pode sugerir um roteiro?',
+          'Preciso de recomendações para uma viagem ao Rio de Janeiro. Quero conhecer as praias mais bonitas e os melhores pontos turísticos da cidade.',
+          'Vou passar uma semana no Rio de Janeiro e gostaria de dicas de hospedagem, restaurantes e atrações imperdíveis na cidade.'
+        ],
+        correctAnswer: 1,
+        explanation: 'A segunda opção fornece detalhes importantes: duração da viagem, destino, época do ano, orçamento e preferências pessoais.'
+      },
+      {
+        question: 'Ao pedir explicações sobre um assunto, qual é a melhor abordagem?',
+        options: [
+          'Sou iniciante em fotografia e acabei de comprar minha primeira câmera DSLR. Pode me explicar os conceitos básicos para começar?',
+          'Pode me explicar os conceitos básicos de fotografia? Comprei minha primeira câmera digital e quero aprender sobre luz, composição e modos automáticos.',
+          'Gostaria de aprender fotografia para tirar fotos melhores em viagens e eventos especiais. Quais são os princípios fundamentais?',
+          'Quero entender melhor sobre fotografia digital. Pode me explicar sobre ISO, abertura e velocidade do obturador?'
+        ],
+        correctAnswer: 1,
+        explanation: 'A segunda opção contextualiza seu nível (iniciante), equipamento (câmera digital) e especifica os aspectos que deseja aprender.'
+      },
+      {
+        question: 'Qual é a melhor maneira de pedir sugestões de exercícios físicos?',
+        options: [
+          'Busco exercícios para perda de peso que posso fazer em casa. Tenho experiência com musculação e cardio moderado.',
+          'Procuro exercícios para fazer em casa, 30 minutos por dia, focando em perda de peso. Tenho apenas pesos leves e um tapete de yoga.',
+          'Gostaria de montar uma rotina de exercícios para emagrecer em casa. Prefiro treinos curtos e de alta intensidade.',
+          'Preciso de um programa de exercícios para perda de peso que possa fazer em casa. Tenho pouco tempo disponível durante a semana.'
+        ],
+        correctAnswer: 1,
+        explanation: 'A segunda opção especifica o local (casa), tempo disponível (30 minutos), objetivo (perda de peso) e equipamentos disponíveis.'
+      },
+      {
+        question: 'Ao pedir recomendações de livros, qual abordagem é mais eficaz?',
+        options: [
+          'Busco recomendações de ficção científica hard sci-fi. Gosto de histórias com bases científicas sólidas e exploração espacial.',
+          'Pode recomendar livros de ficção científica com foco em exploração espacial? Gostei muito de "Perdido em Marte" e prefiro histórias mais focadas em ciência que em fantasia.',
+          'Procuro livros de ficção científica sobre exploração espacial. Gosto de autores como Andy Weir e Arthur C. Clarke.',
+          'Gostaria de indicações de ficção científica realista. Prefiro histórias que se passam no espaço e têm embasamento científico.'
+        ],
+        correctAnswer: 1,
+        explanation: 'A segunda opção fornece o gênero desejado (ficção científica), um subtema específico (exploração espacial), uma referência do que gosta (Perdido em Marte) e preferências específicas (foco em ciência).'
       }
     ]
   },
@@ -263,18 +307,62 @@ Tente você mesmo e observe como o LLM:
       }
     ],
     exercises: [
-      {
-        question: 'Pratique melhorando esta solicitação: "Me ajuda a escrever um email"',
-        options: [
-          'Preciso escrever um email formal para candidatura a uma vaga de desenvolvedor. A empresa é a TechCorp e quero destacar minha experiência com React.',
-          'Me ajuda a escrever um email melhor',
-          'Como fazer email profissional?',
-          'Quero um email bom'
-        ],
-        correctAnswer: 0,
-        explanation: 'A primeira opção fornece contexto específico (candidatura), destinatário (TechCorp), tipo (formal) e foco (experiência com React).'
-      }
-    ]
+        {
+          question: 'Qual das seguintes é a pergunta mais efetiva para um LLM?',
+          options: [
+            'Preciso de uma receita de bolo de chocolate que seja fácil de fazer e que fique bem molhadinho. Você tem alguma sugestão?',
+            'Preciso de uma receita de bolo de chocolate para 10 pessoas. Tenho forno elétrico e ingredientes básicos. Pode me ajudar?',
+            'Quero fazer um bolo de chocolate para um aniversário importante amanhã. Preciso que seja um bolo bonito e gostoso.',
+            'Pode me passar uma receita de bolo de chocolate caseiro? Gostaria de uma que seja testada e aprovada por outros cozinheiros.'
+          ],
+          correctAnswer: 1,
+          explanation: 'A segunda opção é mais efetiva pois especifica o contexto (10 pessoas), equipamento disponível (forno elétrico) e outras informações relevantes (ingredientes básicos).'
+        },
+        {
+          question: 'Ao pedir ajuda para organizar uma viagem, qual abordagem é mais eficaz?',
+          options: [
+            'Quero planejar uma viagem para o Rio de Janeiro nas férias de julho. Busco lugares turísticos famosos e bons restaurantes na cidade.',
+            'Estou planejando uma viagem de 5 dias para o Rio de Janeiro em julho, com um orçamento de R$3.000. Gosto de praias e cultura local. Pode sugerir um roteiro?',
+            'Preciso de recomendações para uma viagem ao Rio de Janeiro. Quero conhecer as praias mais bonitas e os melhores pontos turísticos da cidade.',
+            'Vou passar uma semana no Rio de Janeiro e gostaria de dicas de hospedagem, restaurantes e atrações imperdíveis na cidade.'
+          ],
+          correctAnswer: 1,
+          explanation: 'A segunda opção fornece detalhes importantes: duração da viagem, destino, época do ano, orçamento e preferências pessoais.'
+        },
+        {
+          question: 'Ao pedir explicações sobre um assunto, qual é a melhor abordagem?',
+          options: [
+            'Sou iniciante em fotografia e acabei de comprar minha primeira câmera DSLR. Pode me explicar os conceitos básicos para começar?',
+            'Pode me explicar os conceitos básicos de fotografia? Comprei minha primeira câmera digital e quero aprender sobre luz, composição e modos automáticos.',
+            'Gostaria de aprender fotografia para tirar fotos melhores em viagens e eventos especiais. Quais são os princípios fundamentais?',
+            'Quero entender melhor sobre fotografia digital. Pode me explicar sobre ISO, abertura e velocidade do obturador?'
+          ],
+          correctAnswer: 1,
+          explanation: 'A segunda opção contextualiza seu nível (iniciante), equipamento (câmera digital) e especifica os aspectos que deseja aprender.'
+        },
+        {
+          question: 'Qual é a melhor maneira de pedir sugestões de exercícios físicos?',
+          options: [
+            'Busco exercícios para perda de peso que posso fazer em casa. Tenho experiência com musculação e cardio moderado.',
+            'Procuro exercícios para fazer em casa, 30 minutos por dia, focando em perda de peso. Tenho apenas pesos leves e um tapete de yoga.',
+            'Gostaria de montar uma rotina de exercícios para emagrecer em casa. Prefiro treinos curtos e de alta intensidade.',
+            'Preciso de um programa de exercícios para perda de peso que possa fazer em casa. Tenho pouco tempo disponível durante a semana.'
+          ],
+          correctAnswer: 1,
+          explanation: 'A segunda opção especifica o local (casa), tempo disponível (30 minutos), objetivo (perda de peso) e equipamentos disponíveis.'
+        },
+        {
+          question: 'Ao pedir recomendações de livros, qual abordagem é mais eficaz?',
+          options: [
+            'Busco recomendações de ficção científica hard sci-fi. Gosto de histórias com bases científicas sólidas e exploração espacial.',
+            'Pode recomendar livros de ficção científica com foco em exploração espacial? Gostei muito de "Perdido em Marte" e prefiro histórias mais focadas em ciência que em fantasia.',
+            'Procuro livros de ficção científica sobre exploração espacial. Gosto de autores como Andy Weir e Arthur C. Clarke.',
+            'Gostaria de indicações de ficção científica realista. Prefiro histórias que se passam no espaço e têm embasamento científico.'
+          ],
+          correctAnswer: 1,
+          explanation: 'A segunda opção fornece o gênero desejado (ficção científica), um subtema específico (exploração espacial), uma referência do que gosta (Perdido em Marte) e preferências específicas (foco em ciência).'
+        }
+      ]
   }
 };
 
@@ -606,7 +694,7 @@ const ModuleContent: React.FC<{ params: { moduleId: string } }> = ({ params }) =
                               disabled={showResult || isPracticeExercise}
                               className={`w-full text-left p-4 rounded-lg transition-all border
                                 ${showResult && isCorrectAnswer 
-                                  ? 'bg-green-900/20 border-green-500 text-gray-100' 
+                                  ? 'bg-green-900/20 border-green-500 text-gray-100'
                                   : showResult && isSelected && !isCorrectAnswer
                                   ? 'bg-red-900/20 border-red-500 text-gray-100'
                                   : isPracticeExercise
@@ -616,17 +704,17 @@ const ModuleContent: React.FC<{ params: { moduleId: string } }> = ({ params }) =
                               `}
                             >
                               <span className="flex items-center justify-between">
-                                <span className="flex items-center gap-3">
-                                  <span className="w-6 h-6 rounded-full bg-gray-700 flex items-center justify-center text-sm">
+                                <span className="flex items-start items-center gap-3 min-h-[2.5rem]">
+                                  <span className="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center text-sm flex-shrink-0">
                                     {String.fromCharCode(65 + optIdx)}
                                   </span>
-                                  {option}
+                                  <span className="flex-1 pt-1">{option}</span>
                                 </span>
                                 {showResult && isCorrectAnswer && (
-                                  <CheckCircle2 className="w-5 h-5 text-green-500" />
+                                  <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
                                 )}
                                 {showResult && isSelected && !isCorrectAnswer && (
-                                  <AlertCircle className="w-5 h-5 text-red-500" />
+                                  <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
                                 )}
                               </span>
                             </button>

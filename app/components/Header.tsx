@@ -1,3 +1,6 @@
+'use client';
+
+import { useRouter } from 'next/navigation';
 import React from 'react';
 
 interface HeaderItem {
@@ -11,10 +14,13 @@ interface HeaderProps {
   className?: string;
 }
 
-export const Header: React.FC<HeaderProps> = ({ title, items, className }) => (
-  <header className={`bg-white shadow-sm px-6 ${className}`}>
-    <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-      <h1 className="text-2xl font-bold text-primary-600 font-heading">{title}</h1>
+export const Header: React.FC<HeaderProps> = ({ title, items, className }) => {
+  const router = useRouter();
+
+  return (
+    <header className={`bg-gray-200 shadow-sm px-6 ${className}`}>
+      <div className="container mx-auto px-4 py-6 flex justify-between items-center">
+        <h1 className="text-2xl font-bold text-primary-600 font-heading cursor-pointer" onClick={() => router.push('/')}>{title}</h1>
       <nav className="font-sans">
         <ul className="flex space-x-4">
           {items.map((item, index) => (
@@ -24,6 +30,7 @@ export const Header: React.FC<HeaderProps> = ({ title, items, className }) => (
           ))}
         </ul>
       </nav>
-    </div>
-  </header>
-);
+      </div>
+    </header>
+  );
+};

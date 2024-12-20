@@ -88,7 +88,7 @@ const Courses: React.FC = () => {
 
   const renderDifficultyStars = (difficulty: number) => {
     return Array(difficulty).fill(0).map((_, i) => (
-      <Star key={i} className="inline-block w-4 h-4 text-yellow-400 fill-current" />
+      <Star key={i} className="ml-1 inline-block w-4 h-4 text-yellow-400 fill-current" />
     ));
   };
 
@@ -108,7 +108,8 @@ const Courses: React.FC = () => {
               title={item.title} 
               description={item.description}
               children={<div className="mt-2">
-                <p className="text-secondary-600">
+                {/* centrally align stars and text */}
+                <p className="text-gray-300 flex items-center">
                   Nível: {renderDifficultyStars(item.difficulty)}
                   <span className="ml-4">⏱️ {item.time}</span>
                 </p>
